@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="MavAppoint">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse/jee-neon/eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="WebContent/WEB-INF/lib/activation.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-codec.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-jxpath-1.3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-lang3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-logging-1.1.3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/ini4j-0.5.4.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mail.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mysql-connector-java-5.1.32-bin.jar"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+    </path>
+    <path id="MavAppoint.classpath">
+        <pathelement location="WEB-INF/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="${ECLIPSE_HOME}"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/apache-mime4j-0.6.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/bsh-2.0b4.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/cglib-nodep-2.1_3.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/commons-codec-1.10.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/commons-collections-3.2.2.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/commons-el-1.0.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/commons-exec-1.3.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/commons-io-2.4.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/commons-lang3-3.4.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/commons-logging-1.2.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/cssparser-0.9.16.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/gson-2.3.1.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/guava-19.0.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/hamcrest-core-1.3.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/hamcrest-library-1.3.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/htmlunit-2.18.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/htmlunit-core-js-2.17.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/httpclient-4.5.1.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/httpcore-4.4.3.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/httpmime-4.5.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jasper-compiler-5.5.15.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jasper-compiler-jdt-5.5.15.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jasper-runtime-5.5.15.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/javax.servlet-api-3.1.0.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jcommander-1.48.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jetty-continuation-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jetty-http-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jetty-io-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jetty-jmx-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jetty-security-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jetty-server-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jetty-servlet-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jetty-servlets-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jetty-util-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jna-4.1.0.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jna-platform-4.1.0.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/jsp-api-2.0.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/junit-4.12.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/nekohtml-1.9.22.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/netty-3.5.7.Final.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/phantomjsdriver-1.2.1.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/sac-1.3.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/serializer-2.7.2.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/testng-6.9.9.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/websocket-api-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/websocket-client-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/websocket-common-9.2.13.v20150730.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/xalan-2.7.2.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/xercesImpl-2.11.0.jar"/>
+        <pathelement location="C:/Users/gauth/OneDrive/Documents/Mavappoint/MavAppoint/MavAppoint/selenium-2.52.0/libs/xml-apis-1.4.01.jar"/>
+        <pathelement location="C:/Users/gauth/Downloads/javax.servlet-api-3.1.0.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="WebContent/WEB-INF/classes"/>
+        <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+            <fileset dir="servlets">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+            <fileset dir="Test">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="WebContent/WEB-INF/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="WebContent/WEB-INF/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="servlets"/>
+            <src path="Test"/>
+            <classpath refid="MavAppoint.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="JUnitCore">
+        <java classname="org.junit.runner.JUnitCore" failonerror="true" fork="yes">
+            <classpath refid="MavAppoint.classpath"/>
+        </java>
+    </target>
+    <target name="TestRDBImpl">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="uta.mav.appoint.TestRDBImpl" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="MavAppoint.classpath"/>
+        </junit>
+    </target>
+    <target name="Test">
+        <java classname="Test" failonerror="true" fork="yes">
+            <classpath refid="MavAppoint.classpath"/>
+        </java>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+              	<target name="war" description="Bundles the application as a WAR file" depends="clean, build">
+              	    <mkdir dir="WebContent/WEB-INF/classes"/>
+              	     
+              	    <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+              	            <fileset dir="build/classes">
+              	            <include name="**/*.class"/>
+              	            </fileset>
+              	    </copy>
+              	     
+              	    <war destfile="MavAppoint.war"
+              	        basedir="WebContent"
+              	        needxmlfile="false">
+              	    </war>
+              	</target>          	
+</project>
